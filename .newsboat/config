@@ -1,0 +1,13 @@
+
+browser 		"/usr/local/bin/w3m %u"
+player 			"mpv"
+download-path 	"~/Downloads/%n"
+save-path 		"~/Downloads"
+cleanup-on-quit yes
+text-width 		74
+refresh-on-startup yes
+
+bind-key G end
+bind-key g home
+bind-key j down
+bind-key k up
