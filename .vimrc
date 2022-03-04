@@ -1,20 +1,20 @@
 " .vimrc
 
 set nocompatible
-" Plugins Vundle
 filetype off
+" Plugins Vundle
 execute pathogen#infect()
-set rtp+=~/dotfiles/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+Plugin 'vimwiki/vimwiki'
 call vundle#end()
-"Plug 'vimwiki/vimwiki'
 filetype plugin indent on
 
 "VimWiki settings
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html', 'syntax': 'markdown', 'ext': 'md'}]
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'path_html': '~/vimwiki_html', 'syntax': 'markdown', 'ext': 'md'}]
 let g:vimwiki_global_ext = 0
 
 "nerdtree conf
@@ -140,4 +140,4 @@ set fileformat=unix
 "set encoding=utf-8
 "set fileencoding=utf-8
 "set listchars=eol:¶
-"set list
+set list

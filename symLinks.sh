@@ -1,12 +1,18 @@
 #! /bin/sh
 
+mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.config/zathura
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # Symbolic links of the dotfiles in this directory
 
 ln -s -f ~/dotfiles/.vimrc ~/.vimrc
 ln -s -f ~/dotfiles/.bashrc ~/.bashrc
 ln -s -f ~/dotfiles/.bash_profile ~/.bash_profile
-ln -s -f ~/dotfiles/.vim/ ~/.vim
-ln -s -f ~/dotfiles/.newsboat/ ~/.newsboat
-ln -s -f ~/dotfiles/.tmux.conf/ ~/.tmux.conf
-ln -s -f ~/dotfiles/.gitconfig/ ~/.gitconfig
-ln -s -f ~/dotfiles/.zshrc/ ~/.zshrc
+ln -s -f ~/dotfiles/.newsboat ~/.newsboat
+ln -s -f ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s -f ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s -f ~/dotfiles/.zshrc ~/.zshrc
+ln -sfr ~/dotfiles/zathurarc ~/.config/zathura/zathurarc
+ln -sfr ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
+ln -s -f ~/dotfiles/.alacritty.yml ~/.alacritty.yml
