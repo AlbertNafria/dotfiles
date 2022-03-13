@@ -109,6 +109,20 @@ alias tiempo='curl -s wttr.in/barcelona'
 alias publicip='curl ipinfo.io/ip'
 
 /usr/bin/setxkbmap -option "ctrl:nocaps"
-export PATH=$PATH:/usr/bin:/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:/usr/games:/usr/share/games:/usr/local/games:~/.local/bin:~/bin
+export PATH=$PATH:/usr/bin:/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:/usr/games:/usr/share/games:/usr/local/games:~/.local/bin:~/bin:/opt/idea/bin
 PATH=$PATH:~/bin
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+
+
+# Colors man pages
+export PAGER="most"
+man(){
+    LESS_TERMCAP_mb=$'\e[1;32m'
+    LESS_TERMCAP_md=$'\e[1;32m'
+    LESS_TERMCAP_me=$'\e[0m'
+    LESS_TERMCAP_se=$'\e[0m'
+    LESS_TERMCAP_so=$'\e[01;33m'
+    LESS_TERMCAP_ue=$'\e[0m'
+    LESS_TERMCAP_us=$'\e[1;4;31m'
+    command man "$@"
+}
