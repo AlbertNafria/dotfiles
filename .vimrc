@@ -10,6 +10,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'vimwiki/vimwiki'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 filetype plugin indent on
 
@@ -20,6 +22,8 @@ let g:vimwiki_global_ext = 0
 "nerdtree conf
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
+" airline themes
+let g:airline_theme='base16'
 
 syntax on 
 syntax enable
@@ -49,7 +53,7 @@ set shiftwidth=4 "Indentación de 4 caracteres
 set expandtab  "expandir tabuladores
 set autoindent smartindent "automate indentations
 
-imap <leader>i <Esc> "i para entrar en insert mode, leader i para salir
+"imap <leader>i <Esc> "i para entrar en insert mode, leader i para salir
 
 "Activar color
 colorscheme murphy 
@@ -75,6 +79,8 @@ set splitright splitbelow
 nmap <leader>` [
 nmap <leader>+ ]
 imap <leader>ñ ~
+"Leader , en vez de crtl-c
+imap <leader>, <ESC>
 
 "cambiar de pantalla
 nmap <leader>w <C-w>
@@ -110,7 +116,7 @@ map! <leader>e €
 map! <leader>< >
 map! <leader><< >>
 map! <leader>- _
-map! <leader>, <ESC>$a;<ESC>
+" map! <leader>, <ESC>$a;<ESC>
 map! <leader>. :
 
 "skeletons

@@ -1,6 +1,6 @@
-#! /bin/sh
+#!/bin/sh
 
-mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.config/zathura
+mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.config/zathura ~/.config/kitty
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -15,4 +15,4 @@ ln -s -f ~/dotfiles/.gitconfig ~/.gitconfig
 ln -s -f ~/dotfiles/.zshrc ~/.zshrc
 ln -sfr ~/dotfiles/zathurarc ~/.config/zathura/zathurarc
 ln -sfr ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
-ln -s -f ~/dotfiles/.alacritty.yml ~/.alacritty.yml
+# ln -s -f ~/dotfiles/.alacritty.yml ~/.alacritty.yml
