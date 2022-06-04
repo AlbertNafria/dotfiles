@@ -15,8 +15,12 @@ Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 filetype plugin indent on
 
+" set ctrlp plugin. Run :helptags ~/.vim/bundle/ctrlp.vim/doc
+" :help ctrlp.txt
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 "VimWiki settings
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'path_html': '~/vimwiki_html', 'syntax': 'markdown', 'ext': 'md'}]
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/vimwiki_html', 'syntax': 'markdown', 'ext': 'md'}]
 let g:vimwiki_global_ext = 0
 
 "nerdtree conf
