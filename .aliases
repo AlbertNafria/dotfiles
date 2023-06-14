@@ -1,0 +1,32 @@
+alias vifm='vifm $PWD $HOME'
+alias tmux='tmux attach'
+
+#vimwiki
+alias vimwiki='vim -c VimwikiIndex'
+
+#enable colors
+alias ls='ls -G'
+alias grep='grep -G'
+#alias
+alias ll='ls -alG'
+alias gst='git status'
+alias v='vim'
+alias shutdown='sudo shutdown -h now'
+
+#more alias
+alias doc='cd ~/Documents'
+alias dk='cd ~/Desktop'
+alias dw='cd ~/Downloads'
+alias tmat='tmux attach' #abre la sesión de .tmux.conf
+alias tiempo='curl -s wttr.in/barcelona'
+alias mapscii='telnet mapscii.me'
+alias publicip='curl ipinfo.io/ip'
+
+# Alias for Mac
+alias airpods='blueutil --connect "AirPods de Albert"'
+alias icloud='cd /Users/albert/Library/Mobile\ Documents/com~apple~CloudDocs'
+alias beats='blueutil --connect "Beats Flex"'
+
+
+alias cat='bat'
+alias raspi='ssh pi@raspberrypi.local'

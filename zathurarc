@@ -1,0 +1,10 @@
+set selection-clipboard clipboard
+set window-height 3000
+set window-width 3000
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+set first-page-column 1:1
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+set pages-per-row 2
